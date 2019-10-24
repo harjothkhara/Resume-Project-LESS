@@ -130,11 +130,41 @@ table {
 * {
   box-sizing: border-box;
 }
+html {
+  font-size: 62.5%;
+}
 html,
 body {
   height: 100%;
-  background-color: green;
 }
 h1 {
-  color: yellow;
+  font-size: 6rem;
+}
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 3rem;
+}
+p {
+  font-size: 1.6rem;
+}
+table {
+  font-size: 1.6rem;
+}
+th {
+  padding: 10px 3%;
+  text-align: center;
+  background: lightgrey;
+}
+tr {
+  line-height: 1.17;
+}
+tr:nth-child(odd) {
+  background: grey;
+}
+td {
+  padding: 20px 3%;
+  border-top: 1px solid black;
 }

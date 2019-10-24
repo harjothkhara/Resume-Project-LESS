@@ -134,11 +134,58 @@ table {
   box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+  // of default browser font-size of 16px, so working with 10px;
+  // 10px = 1rem
+  // 12px = 1.2rem...
+}
+
 html,
 body {
   height: 100%;
-  background-color: green;
 }
 h1 {
-  color: yellow;
+  font-size: 6rem;
+  // or 60px, 60/10
+}
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 3rem;
+}
+p {
+  font-size: 1.6rem;
+}
+// img {
+//   height: auto;
+//   width: 100%;
+// }
+table {
+  font-size: 1.6rem;
+}
+th {
+  //table header
+  padding: 10px 3%;
+  text-align: center;
+  background: lightgrey; //does not change from nth-child(odd) because this selector is more specific
+}
+tr {
+  // table row
+  line-height: 1.17;
+  &:nth-child(odd) {
+    //do line height property and...
+    background: grey;
+  }
+}
+// only changes to odd nth child of tr:
+// tr:nth-child(odd) {
+//   background: grey;
+// }
+td {
+  //table data
+  padding: 20px 3%;
+  border-top: 1px solid black;
 }
