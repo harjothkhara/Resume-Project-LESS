@@ -294,3 +294,56 @@ td {
   background: black;
   text-decoration: none;
 }
+.container .section__one {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: row;
+  margin-bottom: 40px;
+}
+@media (max-width: 500px) {
+  .container .section__one {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 40px 4%;
+  }
+}
+.container .section__one div:first-child {
+  margin: 0;
+}
+.container .section__one div:first-child h2 {
+  width: 80%;
+  font-family: 'Rubik', sans-serif;
+}
+.container .section__one div:first-child p {
+  margin: 20px 5% 20px 0;
+}
+.container .section__one div:last-child {
+  width: 43%;
+}
+@media (max-width: 500px) {
+  .container .section__one div:last-child {
+    margin-top: 20px;
+    width: 100%;
+  }
+}
+.container .section__one div:last-child h2 {
+  padding-bottom: 20px;
+  font-family: 'Rubik', sans-serif;
+}
+.container .section__one div:last-child ul li {
+  padding: 20px 3%;
+  font-size: 1.6rem;
+  width: 100%;
+  border: 1px solid black;
+}
+.container .section__one div:last-child ul li:nth-child(even) {
+  border-top: 0;
+  border-bottom: 0;
+  background: #eeeeee;
+}
