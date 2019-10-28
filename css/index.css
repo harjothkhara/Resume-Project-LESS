@@ -347,3 +347,27 @@ td {
   border-bottom: 0;
   background: #eeeeee;
 }
+.container .section__two {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
+  padding-bottom: 40px;
+  border-bottom: 1px solid black;
+}
+@media (max-width: 500px) {
+  .container .section__two {
+    padding: 0 4% 40px;
+  }
+}
+.container .section__two div {
+  width: 100%;
+}
+.container .section__two div h2 {
+  font-family: 'Rubik', sans-serif;
+  margin-bottom: 20px;
+}
+.container .section__two div table {
+  border: 1px solid black;
+  width: 100%;
+}
