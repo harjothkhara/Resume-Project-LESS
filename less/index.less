@@ -195,7 +195,7 @@ td {
 @bg-color: rgb(42, 228, 180);
 @shading-color: rgb(238, 238, 238);
 @heading-font: 'Rubik', sans-serif;
-
+@mobile: ~'(max-width: 500px)';
 //=========================================================== mixins
 .center(@justify, @align, @direction) {
   display: flex;
@@ -236,7 +236,7 @@ td {
     border-bottom: 1px solid black;
     margin-bottom: 40px;
 
-    @media (max-width: 500px) {
+    @media @mobile {
       .center(space-between, flex-end, row);
       padding: 0 4% 10px 4%;
     }
@@ -248,7 +248,7 @@ td {
       display: flex;
       justify-content: flex-end;
 
-      @media (max-width: 500px) {
+      @media @mobile {
         flex-wrap: wrap;
         flex-direction: column;
         align-items: flex-end;
@@ -258,7 +258,7 @@ td {
         margin-left: 10%;
         font-size: 1.6rem;
 
-        @media (max-width: 500px) {
+        @media @mobile {
           padding-top: 10px 0 10px 0;
         }
       }
@@ -275,21 +275,21 @@ td {
     -moz-box-shadow: 0px 0px 30px -4px rgba(0, 0, 0, 0.54);
     box-shadow: 0px 0px 30px -4px rgba(0, 0, 0, 0.54);
 
-    @media (max-width: 500px) {
+    @media @mobile {
       .center(flex-start, center, column);
     }
 
     div:first-child {
       .img(33%);
 
-      @media (max-width: 500px) {
+      @media @mobile {
         .img(95%);
         margin-bottom: 40px;
       }
     }
 
     div:last-child {
-      @media (max-width: 500px) {
+      @media @mobile {
         .center(flex-start, flex-start, column);
       }
 
@@ -309,7 +309,7 @@ td {
         font-size: 2.3rem;
         background: @shading-color;
 
-        @media (max-width: 500px) {
+        @media @mobile {
           align-self: center;
         }
         &:hover {
@@ -327,7 +327,7 @@ td {
     .center(center, flex-start, row);
     margin-bottom: 40px;
 
-    @media (max-width: 500px) {
+    @media @mobile {
       .center(flex-start, flex-start, column);
       padding: 40px 4%;
     }
@@ -346,7 +346,7 @@ td {
     div:last-child {
       width: 43%;
 
-      @media (max-width: 500px) {
+      @media @mobile {
         margin-top: 20px;
         width: 100%;
       }
@@ -376,7 +376,7 @@ td {
     padding-bottom: 40px;
     border-bottom: 1px solid black;
 
-    @media (max-width: 500px) {
+    @media @mobile {
       padding: 0 4% 40px;
     }
 
@@ -398,7 +398,7 @@ td {
     address {
       padding: 40px 0;
 
-      @media (max-width: 500px) {
+      @media @mobile {
         padding: 40px 4%;
       }
 
