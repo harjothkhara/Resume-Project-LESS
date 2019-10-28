@@ -248,7 +248,7 @@ td {
   }
 }
 .container header div:first-child {
-  max-width: 30%;
+  max-width: 33%;
 }
 @media (max-width: 500px) {
   .container header div:first-child {
