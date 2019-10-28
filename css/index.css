@@ -371,3 +371,20 @@ td {
   border: 1px solid black;
   width: 100%;
 }
+.container footer address {
+  padding: 40px 0;
+}
+@media (max-width: 500px) {
+  .container footer address {
+    padding: 40px 4%;
+  }
+}
+.container footer address p {
+  padding-top: 10px;
+}
+.container footer div {
+  text-align: center;
+  height: 100px;
+  width: 100%;
+  padding-top: 40px;
+}
